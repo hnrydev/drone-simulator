@@ -17,7 +17,23 @@ If you already cloned without `--recursive`:
 git submodule update --init --recursive
 ```
 
-## Build & run (Ubuntu)
+## One-shot setup (Ubuntu / WSL Ubuntu)
+
+From the **repo root** after cloning with `--recursive`:
+
+```bash
+bash scripts/setup-full-sitl.sh
+```
+
+That updates submodules, runs PX4’s `ubuntu.sh` (deps + Gazebo stack), and builds **SITL** once. Then start the sim:
+
+```bash
+bash scripts/run-sim.sh gz_x500_depth
+```
+
+First full build can take **tens of minutes**. On Windows, read **[docs/WINDOWS-WSL.md](docs/WINDOWS-WSL.md)** so WSL stays healthy (clone under `~` in Linux, not only on `/mnt/c`).
+
+## Build & run (manual)
 
 From `PX4-Autopilot`:
 
