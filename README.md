@@ -2,6 +2,8 @@
 
 Wrapper repo for PX4 + Gazebo SITL experiments. Upstream firmware lives in **`PX4-Autopilot`** as a Git submodule ([PX4/PX4-Autopilot](https://github.com/PX4/PX4-Autopilot)).
 
+**New to Linux or PX4?** Follow **[START_HERE.md](START_HERE.md)** — step-by-step from zero on an Ubuntu ThinkPad (and a short note if you use Windows + WSL).
+
 ## Clone
 
 Always use **`--recursive`** so nested submodules (sim assets, mavlink, NuttX, etc.) are present:

@@ -8,6 +8,8 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 echo "==> Repo root: $ROOT"
+echo "==> This script will take a LONG time the first time (downloads + compile)."
+echo "==> Keep the laptop plugged in; do not close this window until it finishes."
 echo "==> Updating git submodules (recursive)..."
 git submodule update --init --recursive
 
