@@ -57,9 +57,25 @@ HEADLESS=1 make px4_sitl gz_x500_depth
 
 ```
 drone-simulator/
-├── README.md          ← this file
+├── README.md
+├── START_HERE.md      ← beginner walkthrough (Ubuntu ThinkPad / WSL)
+├── scripts/           ← setup-full-sitl.sh, run-sim.sh
+├── docs/              ← WINDOWS-WSL.md, etc.
 ├── .gitmodules
 └── PX4-Autopilot/     ← submodule → github.com/PX4/PX4-Autopilot
 ```
 
 Updating the submodule pointer to a newer PX4 release is intentional; pull upstream changes inside `PX4-Autopilot` or bump the submodule commit from this repo.
+
+## When you come back later
+
+On the machine where you already cloned:
+
+```bash
+cd ~/drone-simulator    # or wherever you put this repo
+git pull
+git submodule update --init --recursive
+```
+
+- If setup **already finished** once (`setup-full-sitl.sh` completed successfully), skip straight to **`bash scripts/run-sim.sh gz_x500_depth`**.
+- If you **never finished** setup or this is a **new PC**, run **`bash scripts/setup-full-sitl.sh`** again after the commands above (needs **~25 GB free disk** and time — see **[START_HERE.md](START_HERE.md)**).

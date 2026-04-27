@@ -143,6 +143,20 @@ Extra tips (clone location, fixing a broken install): see **[docs/WINDOWS-WSL.md
 
 ---
 
+## Coming back another day
+
+Open Terminal and run:
+
+```bash
+cd ~/drone-simulator
+git pull
+git submodule update --init --recursive
+```
+
+If you **already finished** Step 4 before, you can usually go straight to **Step 5** (`bash scripts/run-sim.sh`). If you **never finished** setup or you’re on a **new machine**, run Step 4 again (`bash scripts/setup-full-sitl.sh`) after the commands above.
+
+---
+
 ## Quick command summary (after everything is installed once)
 
 | Goal | Command |

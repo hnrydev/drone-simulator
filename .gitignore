@@ -1,0 +1,4 @@
+# OS / editor noise at repo root (PX4 submodule has its own ignore rules)
+.DS_Store
+Thumbs.db
+desktop.ini
